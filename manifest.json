@@ -8,7 +8,7 @@
     "storage"
   ],
   "options_ui": {
-    "page": "options.html",
+    "page": "./main/options.html",
     "chrome_style": true
   },
   "background": {
@@ -21,7 +21,7 @@
         "<all_urls>"
       ],
       "js": [
-        "content-script.js"
+        "./main/content-script.js"
       ],
       "run_at": "document_start"
     }
@@ -34,7 +34,7 @@
       "128": "images/get_started128.png"
     },
     "default_title": "Unipus Key Auto Filler",
-    "default_popup": "popup.html"
+    "default_popup": "./main/popup.html"
   },
   "icons": {
     "16": "images/get_started16.png",

@@ -1,5 +1,5 @@
 # Liberator of the oppressed by Unipus
-* **[中文版](./README_CN.md)**
+* **[中文版](./doc/README_CN.md)**
 
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
@@ -24,5 +24,5 @@ We are a group of college students who are tired of filling the blank on Unipus 
 No matter you can code and be a developer or just help us to format key files. History will witness your contribution and all the user will never forget your distinctive contribution.
 
 ## To contribute 
-* **[Document of "To Contribute"](./ToContribute.md)**
-* **["如何贡献"中文版](./ToContribute_CN.md)**
+* **[Document of "To Contribute"](./doc/ToContribute.md)**
+* **["如何贡献"中文版](./doc/ToContribute_CN.md)**
