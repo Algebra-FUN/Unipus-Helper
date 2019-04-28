@@ -45,8 +45,8 @@ window.key_2_1 = {
   },
   ……………… 更多详见 "./keys/key_2_1.js"
 }
-[更多详见](./keys/key_2_1.js)
 ```
+[更多详见](./keys/key_2_1.js)
 ### 第二步 :在"key-config.js"文件中添加配置
 ```js
 window.keys = [
