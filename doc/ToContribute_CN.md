@@ -26,7 +26,7 @@ window.key_2_{UnitID} = {
   | 填空题 | 单项选择题 | Cloze题 | B组填空题 |
 * keyString：直接粘贴对应答案字符串
 
-[答案JS文件模板](./keys/key_2_1.js)
+[答案JS文件模板](../keys/key_2_1.js)
 ```js
 window.key_2_1 = {
   'key-1-2-7': {
@@ -46,7 +46,7 @@ window.key_2_1 = {
   ……………… 更多详见 "./keys/key_2_1.js"
 }
 ```
-[更多详见](./keys/key_2_1.js)
+[更多详见](../keys/key_2_1.js)
 ### 第二步 :在"key-config.js"文件中添加配置
 ```js
 window.keys = [
