@@ -20,6 +20,7 @@ window.key_2_{UnitID} = {
 参数意义
 * ID：题号(如页面URL)
 * type：对应题目类型
+
   | blank | mc | cloze | blankB |
   | ------ | ------ | ------ | ------ |
   | 填空题 | 单项选择题 | Cloze题 | B组填空题 |
