@@ -1,10 +1,10 @@
-# Unipus答案自动填充者
+# Unipus Helper
 * **[English Version](../README.md)**
 
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 ## 简介
-这是一个可以自动在Unipus填写答案的谷歌插件，[更多细节详见英文版](../README.md)
+这是一个可以帮助你完成Unipus的谷歌插件，[更多细节详见英文版](../README.md)
 
 ## 功能
 * 自动将答案填充入Unipus.
