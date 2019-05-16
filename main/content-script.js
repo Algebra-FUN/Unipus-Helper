@@ -51,7 +51,7 @@ function BBQ(str) {
     let word = []
     for (let i = 0; str[i]; i++) {
         let c = str.charCodeAt(i)
-        if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || str[i] === ' ') {
+        if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || str[i] === ' ' || str[i] === '-') {
             word.push(str[i])
         } else {
             result.push(word.join('').replace(/(^\s*)|(\s*$)/g, ""))
