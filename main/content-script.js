@@ -114,13 +114,15 @@ function fillBlank() {
 }
 
 function doCollocation(keys = []){
-    let greens = document.getElementsByClassName('green')
-    console.log(greens)
-    let orders = []
-    Array.prototype.forEach.call(greens,item => orders.push(keys.indexOf(item.innerHTML.slice(3))))
-    orders.forEach((order,index) => {
-        greens[index].innerHTML = keys[index]
-        greens[index].id = `Item_${order}`
+    let greens = document.getElementsByClassName('s-tz')
+    let texts = Array.prototype.map.call(greens,item => item.innerHTML)
+    keys.forEach((key,index) => {
+        for(let i = 0;texts[i];i++){
+            if(key === texts[i].slice(3)){
+                greens[index].innerHTML = texts[i]
+                greens[index].id = `Item_${i}`
+            }
+        }
     })
 }
 

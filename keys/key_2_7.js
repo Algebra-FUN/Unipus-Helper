@@ -27,6 +27,10 @@ window.key_2_7 = {
         content: `1.comes down to  2.take exception to  3.make concessions to  4.burst into  
 5.feel at ease with   6.on both counts  7.took over  8.stemmed from `
     },
+    'key-7-6-4': {
+        type: `mc`,
+        content: `1.D  2.C  3.A  4.C  5.D  6.A   7.B    8.C`
+},
     'key-7-6-6': {
         type: `blank`,
         content: `1.bounced    2.tolerate   3.supplement   4.condemn   5.overflowed   
@@ -39,6 +43,11 @@ window.key_2_7 = {
 5.fussed over   6.is unique in   7.exerting themselves   8.substituted for 
 `
     },
+    'key-7-7-2': {
+        type: `collocation`,
+        content: `1. strong urge  2. Particularly difficult 3. Demanding job  4. make concessions  5. Social context  6. Management style
+`
+	},
     'key-7-7-3':
         {
             type: `blank`,

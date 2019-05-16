@@ -64,6 +64,10 @@ window.key_2_5 = {
     'key-5-7-3': {
         type: 'blankB',
         content: `1.	financial distress  2.financial trouble 3.financially bankrupt  4.seemingly free  5.suspend desires 6.easily accessible  7.emotionally crippled 8.artificial sense  9.truly autonomous 10.completely charmed  11.staggeringly expensive 12.buying decisions `
+    },
+    'key-5-7-2':{
+        type:'collocation',
+        content:`1.	seemingly free  2. barely enough  3. easily accessible  4.absolutely needed  5.financially bankrupt  6.completely charmed  7.truly autonomous  8.staggeringly expensive 9.emotionally crippled`
     }
 
 }
