@@ -71,6 +71,10 @@ window.key_2_6 = {
     `
 
     },
+    'key-6-7-2':{
+        type:'collocation',
+        content:`1. conscious effort   2.winning strategy  3.limited choice  4. remotest idea    5.temporary pain  6.primary role`
+    },
 
     'key-6-7-3': {
 

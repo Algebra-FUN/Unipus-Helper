@@ -74,7 +74,7 @@ function parseKey(type, content) {
     } else if (type === 'blankB') {
         return result.join(' ').split(' ')
     } else if (type === 'collocation'){
-        
+        return result.map(e => e.split(' ')[1])
     }
     return content
 }
@@ -111,6 +111,17 @@ function fillBlank() {
         doCollocation(content)
     }
 
+}
+
+function doCollocation(keys = []){
+    let greens = document.getElementsByClassName('green')
+    console.log(greens)
+    let orders = []
+    Array.prototype.forEach.call(greens,item => orders.push(keys.indexOf(item.innerHTML.slice(3))))
+    orders.forEach((order,index) => {
+        greens[index].innerHTML = keys[index]
+        greens[index].id = `Item_${order}`
+    })
 }
 
 function doCloze(content = '') {
