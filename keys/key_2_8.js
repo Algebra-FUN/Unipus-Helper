@@ -76,7 +76,7 @@ window.key_2_8 = {
 
     },
 
-    'key-8-6-7': {
+    'key-8-7-2': {
 
         type: 'blank',
 
@@ -87,9 +87,9 @@ window.key_2_8 = {
 
     },
 
-    'key-6-7-3': {
+    'key-8-7-3': {
 
-        type: 'blank',
+        type: 'blankB',
 
         content: `1.	1.entire field   2.subsequent advances  3.reasonable argument   4.severely restricted  
 5.terrifying effects  6.suitable alternatives  7.well-understood principles  8.Medical research  9.supreme desire  10.moral compass  11.remain undiscovered    12.innocent animals

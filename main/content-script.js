@@ -70,7 +70,7 @@ function parseKey(type, content) {
     } else if (type === 'mc') {
         return result.join('').replace(/[ ]/g,"").toLowerCase()
     } else if (type === 'cloze') {
-        return result.join('').replace(/[ ]/g,"").toLowerCase()
+        return result.join('').replace(/[ ]/g,"").toLowerCase().split('-').join('')
     } else if (type === 'blankB') {
         return result.join(' ').split(' ')
     } else if (type === 'collocation'){
