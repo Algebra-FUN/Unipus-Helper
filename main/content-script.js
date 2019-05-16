@@ -135,8 +135,8 @@ function doCloze(content = '') {
 function doBlank(content = []) {
     for (let r = 0,i = 0; content[i]; r++,i++) {
         document.getElementById(`Blank_${r}_0`).value = content[i]
-        for(let k = 1;document.getElementById(`Blank_${r}_${k}`);k++,i++){
-            document.getElementById(`Blank_${r}_${k}`).value = content[i]
+        for(let k = 1;document.getElementById(`Blank_${r}_${k}`);k++){
+            document.getElementById(`Blank_${r}_${k}`).value = content[++i]
         }
     }
     console.log('blank be filled')
