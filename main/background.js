@@ -19,13 +19,4 @@ chrome.runtime.onInstalled.addListener(function () {
   });
   chrome.browserAction.setBadgeText({ text: 'Uni' });
   chrome.browserAction.setBadgeBackgroundColor({ color: [0, 128, 0, 255] });
-  //增加适用页面Rules
-  chrome.declarativeContent.onPageChanged.removeRules(undefined, function () {
-    chrome.declarativeContent.onPageChanged.addRules([{
-      conditions: [new chrome.declarativeContent.PageStateMatcher({
-        pageUrl: { hostEquals: '211.81.52.7/book' },//适用页面URL
-      })],
-      actions: [new chrome.declarativeContent.ShowPageAction()]
-    }]);
-  });
 });
