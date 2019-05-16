@@ -121,6 +121,7 @@ function doCollocation(keys = []){
             if(key === texts[i].slice(3)){
                 greens[index].innerHTML = texts[i]
                 greens[index].id = `Item_${i}`
+                break
             }
         }
     })
