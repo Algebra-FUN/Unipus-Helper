@@ -78,7 +78,7 @@ window.key_2_6 = {
 
     'key-6-7-3': {
 
-        type: 'blankB',
+        type: 'blank',
 
         content: `1.	rival options  2.painful choices  3.carefully chosen  4.multiple options
 4.	winning strategy  6.predictably irrational  7.temporary pain  8.complex decision

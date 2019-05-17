@@ -25,7 +25,7 @@ window.key_2_8 = {
         type: 'blank',
 
         content: `1. interference   2. invasion   3. Consumption   4. procession
-5. specific       6. Deception   7. scarce      8. thrillers
+5. specific       6. deception   7. scarce      8. thrillers
 
     `
 

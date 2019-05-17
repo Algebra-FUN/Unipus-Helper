@@ -39,6 +39,13 @@ window.key_2_1 = {
     5.  get hold of   6. appealed to   7. leaving ..behind     8. focus on 
     `
     },
+    'key-1-7-2':{
+        type:'collocation',
+        content:`essential framework     2. distinctive difference      3 high standards  
+        4 valuable possessions     5 considerable frustration      6 acquire knowledge    
+        7 overcome deficiencies    8 sketch thoughts             9 devise a scheme
+       `
+    },
     'key-1-7-3': {
         type: 'blankB',
         content: `1 essential framework    2 proper vocabulary   3 excellent control  4 language deficit
