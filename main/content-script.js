@@ -74,7 +74,7 @@ function parseKey(type, content) {
     } else if (type === 'blankB') {
         return result.join(' ').split(' ')
     } else if (type === 'collocation'){
-        return result.map(e => e.split(' ')[1])
+        return result.map(e => e.split(' ').slice(1).join(' '))
     }
     return content
 }

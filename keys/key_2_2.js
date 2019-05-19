@@ -16,7 +16,7 @@ content:'promising/bearing/housing/objective/offend/exclude/excess/execute/inten
     content:'1-5:  C H D J B       6-10: L M G F A'  },
 'key-2-2-12':{
     type:'blank',
-    content:'1. are liable to  2. in favor of  3. is bound to  4. speculate about 5.invested with  6. stand up for  7. in the form of  8. prepared for 9. in the companyof 10. in succession'
+    content:'1. are liable to  2. in favor of  3. is bound to  4. speculate about 5.invested...with  6. stand up for  7. in the form of  8. prepared for 9. in the companyof 10. in succession'
   },
 'key-2-6-4':{
     type:'mc',
@@ -32,7 +32,7 @@ content:'promising/bearing/housing/objective/offend/exclude/excess/execute/inten
   },
 'key-2-7-2':{
     type: 'collocation' ,
-    content: '1. sufficient/promising jobs 2. well-rounded human beings 3. develop identity 4. shrinking job market 5. dominant pillars 6. reform system 7. specialized fields 8. general consensus'
+    content: '1. sufficient jobs 2. well-rounded human beings 3. develop identity 4. shrinking job market 5. dominant pillars 6. reform system 7. specialized fields 8. general consensus'
   },
 'key-2-7-3':{
     type:'blankB',

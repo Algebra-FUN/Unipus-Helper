@@ -76,11 +76,8 @@ window.key_2_3 = {
   },
 
   'key-3-7-2': {
-
       type: 'collocation',
-
-      content: `1.journey   2.pressure   3.generation   4.attitude    5.challenge    6.need    7.change    8.aspirations`
-
+      content: `1.a journey   2.a pressure   3.a generation   4.a attitude    5.a challenge    6.a need    7.a change    8.a aspirations`
   },
 
   'key-3-7-3': {
