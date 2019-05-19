@@ -30,13 +30,13 @@ window.key_2_1 = {
     'key-1-6-6': {
         type: 'blank',
         content: `mysterious   2. desperate   3.  devise    4. negotiate   5.  recalled 
-    6. specifically    7. depict      8. Ignorance    9. Expand    10 confusion
+    6. specifically    7. depict      8. ignorance    9. expand    10 confusion
     `
     },
     'key-1-6-7': {
         type: 'blank',
-        content: `apply to     2. in a bid to      3.  end up         4. speaking of  
-    5.  get hold of   6. appealed to   7. leaving ..behind     8. focus on 
+        content: `apply to     2. in a bid to      3.  end up         4. Speaking of  
+    5.  get hold of   6. appealed to   7. Leaving ..behind     8. focus on 
     `
     },
     'key-1-7-2':{
