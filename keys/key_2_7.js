@@ -1,5 +1,5 @@
-window.key_2_1 = {
-    'key-3-2-7': {
+window.key_2_7 = {
+    'key-7-2-7': {
         type: 'blank',
         content: `1. peculiar   2. radical  3. phase   4. sensible 5.  predict
    6. labeled  7. resent  8.  witnessed 9.  equivalent  10.parallels`
@@ -7,7 +7,7 @@ window.key_2_1 = {
 
 
 
-    'key-3-2-9': {
+    'key-7-2-9': {
 
         type: 'blank',
 
@@ -15,7 +15,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-2-10': {
+    'key-7-2-10': {
 
         type: 'blank',
 
@@ -28,7 +28,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-2-11': {
+    'key-7-2-11': {
 
         type: 'cloze',
 
@@ -36,7 +36,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-2-12': {
+    'key-7-2-12': {
 
         type: 'blank',
 
@@ -44,7 +44,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-6-4': {
+    'key-7-6-4': {
 
         type: 'mc',
 
@@ -52,7 +52,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-6-6': {
+    'key-7-6-6': {
 
         type: 'blank',
 
@@ -62,7 +62,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-6-7': {
+    'key-7-6-7': {
 
         type: 'blank',
 
@@ -75,7 +75,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-7-2': {
+    'key-7-7-2': {
 
         type: 'collocation',
 
@@ -83,7 +83,7 @@ window.key_2_1 = {
 
     },
 
-    'key-3-7-3': {
+    'key-7-7-3': {
 
         type: 'blankB',
 
