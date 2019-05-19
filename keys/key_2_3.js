@@ -1,4 +1,4 @@
-window.key_2_1 = {
+window.key_2_3 = {
   'key-3-2-7': {
       type: 'blank',
       content: `1. peculiar   2. radical  3. phase   4. sensible 5.  predict
