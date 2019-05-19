@@ -14,7 +14,7 @@ window.key_2_6 = {
 
         type: 'blank',
 
-        content: ' Strategic/sympathetic/confirmation/location/reflection/provision/installation/registration/quote/sympathize/criticize/industrialize'
+        content: ' strategic/sympathetic/confirmation/location/reflection/provision/installation/registration/quote/sympathize/criticize/industrialize'
 
     },
 
@@ -40,7 +40,7 @@ window.key_2_6 = {
 
         type: 'blank',
 
-        content: `1 I was attached to  2 be measured in  3 come in handy   4 clinging to
+        content: `1 was attached to  2 be measured in  3 come in handy   4 clinging to
 5 pay a big price  6 are exhausted from   7 imposed on  8 revolve around `
     },
 
@@ -56,7 +56,7 @@ window.key_2_6 = {
 
         type: 'blank',
 
-        content: `1.	Concerning 2.specified  3.controversy  4.rendered  5.enforced
+        content: `1.	concerning 2.specified  3.controversy  4.rendered  5.enforced
 6.  distribute   7.highlighted  8.implication  9.penetrating  10.subtract
     `
 
