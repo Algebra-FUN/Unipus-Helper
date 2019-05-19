@@ -36,7 +36,7 @@ content:'promising/bearing/housing/objective/offend/exclude/excess/execute/inten
   },
 'key-2-7-3':{
     type:'blankB',
-    content:'1.promising 2.worsens 3.shrinking 4.dominant 5.land 6.great 7.well-rounded 8.creative 9.elegant 10.constructive 11.skills 12.make'
+    content:'1.promising 2.worsens 3.shrinking 4.dominant 5.land 6.great 7.well rounded 8.creative 9.elegant 10.constructive 11.skills 12.make'
   },
 }
 
