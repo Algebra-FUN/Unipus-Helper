@@ -1,4 +1,4 @@
-window.key_2_4 = {
+window.key_2_2 = {
   'key-2-2-7':{
     type:'blank',
     content:'1.promotes 2.accelerate 3.mystery 4.insight 5.boost 6.analysis 7.calculate 8.barriers 9.destruction10.prospect'
