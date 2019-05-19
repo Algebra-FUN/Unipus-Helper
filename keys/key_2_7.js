@@ -85,7 +85,7 @@ window.key_2_7 = {
 
     'key-7-7-3': {
 
-        type: 'blankB',
+        type: 'blank',
 
         content: `1.fluid  2.contemporary   3.radical  4.enormous   5.prideful  6.competitive  7.rebellious   
 8.transition  9.unavoidable   10. traditional  11.unique   12.peculiar `
