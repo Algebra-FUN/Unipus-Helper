@@ -1,95 +1,58 @@
-window.key_2_1 = {
-    'key-3-2-7': {
-        type: 'blank',
-        content: `1. peculiar   2. radical  3. phase   4. sensible 5.  predict
-   6. labeled  7. resent  8.  witnessed 9.  equivalent  10.parallels`
+window.key_2_7 = {
+    'key-7-2-7': {
+        type: `blank`,
+        content: `1. harness   2. symbolic   3. disposed   4. flourishing   5. violated     
+ 6. accommodation   7. infer   8. compose    9. plausible  10. tolerance
+ `
     },
-
-
-
-    'key-3-2-9': {
-
-        type: 'blank',
-
-        content: 'chaotic/dramatic/academy/depression/detection/erosion/classification/confuse/cooperate/dictate/rightist/journal'
-
+    'key-7-2-9': {
+        type: `blank`,
+        content: `fatal/horizontal/mechanical/occasional/proportional/logic/denial/commerce/relativity/priority/continuity/actuality
+ `
     },
-
-    'key-3-2-10': {
-
-        type: 'blank',
-
-        content: ` 1.journal  2.chaotic  3.cooperate  4.erosion  5.dramatic   6. confuse     
-
-7.academy  8.rightists  9.depression  10.dictate 11.detection  12.classification
-
-
-    `
-
+    'key-7-2-10': {
+        type: `blank`,
+        content: `1.actuality  2.mechanical  3.logic  4.denial  5.Occasional       
+    6.fatal   7.continuity   8.relativity   9.priority      10.commerce
+    11.proportional   12.horizontal
+ `
     },
-
-    'key-3-2-11': {
-
-        type: 'cloze',
-
-        content: `1-5: K E A C L         6-10:  I G N H O`
-
+    'key-7-2-11': {
+        type: `cloze`,
+        content: ` 1-5:  D J M H A  6-10:  O F L I C
+ `
     },
-
-    'key-3-2-12': {
-
-        type: 'blank',
-
-        content: `1. saddled with  2. back off  3.gives way to   4.resorted to  5.make allowances for  6. wonder at 7. prior to  8.based upon/on `
-
+    'key-7-2-12': {
+        type: `blank`,
+        content: `1.comes down to  2.take exception to  3.make concessions to  4.burst into  
+5.feel at ease with   6.on both counts  7.took over  8.stemmed from `
     },
-
-    'key-3-6-4': {
-
-        type: 'mc',
-
-        content: `1.A  2. C   3. D   4. A   5. B   6. D   7. D    8. C  `
-
+    'key-7-6-4': {
+        type: `mc`,
+        content: `1.D  2.C  3.A  4.C  5.D  6.A   7.B    8.C`
+},
+    'key-7-6-6': {
+        type: `blank`,
+        content: `1.bounced    2.tolerate   3.supplement   4.condemn   5.overflowed   
+6.swear  7.resemble   8.compounded   9.disgusting   10.trim
+`
     },
-
-    'key-3-6-6': {
-
-        type: 'blank',
-
-        content: `1.hollow   2. restless  3.demonstrate   4.exiled   5.miserable 
-
-6.commercial  7. hesitated  8.erupt  9.refine 10.feasible`
-
+    'key-7-6-7': {
+        type: `blank`,
+        content: `1.convert to   2.was revolted by   3.was comprised of   4.busied himself with
+5.fussed over   6.is unique in   7.exerting themselves   8.substituted for 
+`
     },
-
-    'key-3-6-7': {
-
-        type: 'blank',
-
-        content: `1. are tired of  2.fall into  3.be strict with  4.not amount to mach  
-
-5.drifted off  6.bonded with  7.resign himself to  8.surrender themselves to   
-
-
-    `
-
-    },
-
-    'key-3-7-2': {
-
-        type: 'collocation',
-
-        content: `1.journey   2.pressure   3.generation   4.attitude    5.challenge    6.need    7.change    8.aspirations`
-
-    },
-
-    'key-3-7-3': {
-
-        type: 'blankB',
-
-        content: `1.fluid  2.contemporary   3.radical  4.enormous   5.prideful  6.competitive  7.rebellious   
-8.transition  9.unavoidable   10. traditional  11.unique   12.peculiar `
-
-    }
-
+    'key-7-7-2': {
+        type: `collocation`,
+        content: `1. strong urge  2. Particularly difficult 3. Demanding job  4. make concessions  5. Social context  6. Management style
+`
+	},
+    'key-7-7-3':
+        {
+            type: `blank`,
+            content:
+                `1.plausible   2.context   3.management   4.pleasantly   5.great   6.strong  7.subtle  8.conflicting  9.personal  10.typically  11.diplomatically  12.vaguely
+`
+        }
 }
