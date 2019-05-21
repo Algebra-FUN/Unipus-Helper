@@ -16,7 +16,7 @@ content:'promising/bearing/housing/objective/offend/exclude/excess/execute/inten
     content:'1-5:  C H D J B       6-10: L M G F A'  },
 'key-2-2-12':{
     type:'blank',
-    content:'1. are liable to  2. in favor of  3. is bound to  4. speculate about 5.invested...with  6. stand up for  7. in the form of  8. prepared for 9. in the companyof 10. in succession'
+    content:'1. are liable to  2. in favor of  3. is bound to  4. speculate about 5.invested...with  6. stand up for  7. in the form of  8. prepared for 9. in the company of 10. in succession'
   },
 'key-2-6-4':{
     type:'mc',
@@ -28,7 +28,7 @@ content:'promising/bearing/housing/objective/offend/exclude/excess/execute/inten
   },
 'key-2-6-7':{
     type:'blank',
-    content:'1. bother to  2. is available to  3. been compelled to  4. described...as 5. Exposed...to  6. rather than  7. have something to do with  8. for its own sake'
+    content:'1. bother to  2. is available to  3. been compelled to  4. described...as 5. exposed...to  6. rather than  7. have something to do with  8. for its own sake'
   },
 'key-2-7-2':{
     type: 'collocation' ,
