@@ -7,7 +7,8 @@ chrome.runtime.onInstalled.addListener(function () {
   const data = {
     isRun: true,
     setting: {
-      correctRate: 97
+      correctRate: 97,
+      autoRun:false
     }
   }
 

@@ -9,6 +9,7 @@ function isTarget() {
 }
 
 var UnitID, SectionID, SisterID
+var autoRun = false
 
 function getPageInfo() {
     UnitID = document.getElementById('UnitID').value
@@ -36,6 +37,7 @@ function searchKey() {
         chrome.storage.sync.get(keyTab, data => {
             if (isDataEmpty(data)) {
                 console.log('not found key for this quiz')
+                goNext()
                 return
             }
             keyData = data
@@ -160,18 +162,64 @@ function doMC(content = '') {
     console.log('MC be clicked')
 }
 
+function goNext(){
+    if(!autoRun){
+        return
+    }
+    if(document.getElementsByClassName('next')[0]){
+        console.log('goNext')
+        document.getElementsByClassName('next')[0].click()
+    }
+}
+
+function waitforThree(what,text){
+    setTimeout(what,3000)
+    console.log(`wait for ${text}...3`)
+    setTimeout(()=>console.log(`wait for ${text}...2`),1000)
+    setTimeout(()=>console.log(`wait for ${text}...1`),2000)
+}
+
+function waitforSubmit(){
+    if(!autoRun){
+        return
+    }
+    let submit = document.getElementsByClassName('submit')[0]
+    if((submit.children[0] && submit.children[0].innerText === 'Answer') || submit.innerText === 'Answer'){
+        waitforThree(goNext,'check answer')
+        return
+    }
+    waitforThree(()=>{
+        submit.click()
+        console.log('submit')
+        waitforSure()
+    },'submit')
+}
+
+function waitforSure(){
+    waitforThree(()=>{
+        document.getElementsByClassName('layui-layer-btn0')[0].click()
+        console.log('ensure')
+    },'sure')
+}
+
 function main() {
     if (!isTarget()) {
         console.log('this is not Unipus or no quiz to do')
+        goNext()
         return
     }
     getPageInfo()
     searchKey()
+    waitforSubmit()
 }
+
 chrome.storage.sync.get('isRun', res => {
     //console.log(`isRun=${res.isRun}`)
     if (!res.isRun) {
         return
     }
-    document.addEventListener('DOMContentLoaded', main)
+    chrome.storage.sync.get('setting', res => {
+        autoRun = res.setting.autoRun
+        document.addEventListener('DOMContentLoaded', main)
+    })
 })
