@@ -9,7 +9,7 @@ It is a Chrome Extension whose purpose is to liberate broad Chinese college stud
 ## Functions
 * Fill the blank with correct answer **automatically**.
 * Generate mistakes to mislead the evil Unipus's system **automatically**.
-* ~~Submit all automatically.~~(developing)
+* Submit all **automatically**.
 * ~~Hang up online 2 hours everyday.~~(developing)
 
 ## How to use it
