@@ -11,7 +11,7 @@ window.key_{BookIndex}_{UnitID} = {
   'key-{BookID}-{UnitID}-{SectionID}-{SisterID}':{
     type:'{type}',
     /* 参数可取范围
-       type = {'blank','mc','cloze','blankB'}
+       type = {'blank','mc','cloze','blankB','collocation','select'}
     */
     content:'{keyString}'
   }
@@ -21,9 +21,9 @@ window.key_{BookIndex}_{UnitID} = {
 * ID：题号(如页面URL)
 * type：对应题目类型
 
-  | blank | mc | cloze | blankB | collocation |
-  | ------ | ------ | ------ | ------ | ------ |
-  | 填空题 | 单项选择题 | Cloze题 | B组填空题 | B组匹配拖动 |
+  | blank | mc | cloze | blankB | collocation | select |
+  | ------ | ------ | ------ | ------ | ------ |  ------ |
+  | 填空题 | 阅读单项题 | Cloze题 | B组填空题 | B组匹配拖动 | 单词选择题 |
 * keyString：直接粘贴对应答案字符串
 
 [答案JS文件模板](../keys/key_2_1.js)
