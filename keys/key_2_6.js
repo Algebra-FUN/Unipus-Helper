@@ -1,6 +1,6 @@
 window.key_2_6 = {
 
-    'key-6-2-7': {
+    'key-138-6-2-7': {
 
         type: 'blank',
 
@@ -10,7 +10,7 @@ window.key_2_6 = {
 
     },
 
-    'key-6-2-9': {
+    'key-138-6-2-9': {
 
         type: 'blank',
 
@@ -18,7 +18,7 @@ window.key_2_6 = {
 
     },
 
-    'key-6-2-10': {
+    'key-138-6-2-10': {
 
         type: 'blank',
 
@@ -28,7 +28,7 @@ window.key_2_6 = {
 
     },
 
-    'key-6-2-11': {
+    'key-138-6-2-11': {
 
         type: 'cloze',
 
@@ -36,7 +36,7 @@ window.key_2_6 = {
 
     },
 
-    'key-6-2-12': {
+    'key-138-6-2-12': {
 
         type: 'blank',
 
@@ -44,7 +44,7 @@ window.key_2_6 = {
 5 pay a big price  6 are exhausted from   7 imposed on  8 revolve around `
     },
 
-    'key-6-6-4': {
+    'key-138-6-6-4': {
 
         type: 'mc',
 
@@ -52,7 +52,7 @@ window.key_2_6 = {
 
     },
 
-    'key-6-6-6': {
+    'key-138-6-6-6': {
 
         type: 'blank',
 
@@ -62,7 +62,7 @@ window.key_2_6 = {
 
     },
 
-    'key-6-6-7': {
+    'key-138-6-6-7': {
 
         type: 'blank',
 
@@ -71,12 +71,12 @@ window.key_2_6 = {
     `
 
     },
-    'key-6-7-2':{
+    'key-138-6-7-2':{
         type:'collocation',
         content:`1. conscious effort   2.winning strategy  3.limited choice  4. remotest idea    5.temporary pain  6.primary role`
     },
 
-    'key-6-7-3': {
+    'key-138-6-7-3': {
 
         type: 'blank',
 

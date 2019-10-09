@@ -8,13 +8,11 @@ function isTarget() {
     return false
 }
 
-var UnitID, SectionID, SisterID
+var locator
 var autoRun = false
 
 function getPageInfo() {
-    UnitID = document.getElementById('UnitID').value
-    SectionID = document.getElementById('SectionID').value
-    SisterID = document.getElementById('SisterID').value
+    locator = window.location.href.match(/book(?<BookID>\d+)\/.+UnitID=(?<UnitID>\d+)&SectionID=(?<SectionID>\d+)&SisterID=(?<SisterID>\d+)/).groups
 }
 
 var keyTab, keyData
@@ -30,7 +28,8 @@ var setting
 
 //在Storage中搜寻答案
 function searchKey() {
-    keyTab = `key-${UnitID}-${SectionID}-${SisterID}`
+    let { BookID, UnitID, SectionID, SisterID } = locator
+    keyTab = `key-${BookID}-${UnitID}-${SectionID}-${SisterID}`
     console.log(`keyTab=${keyTab}`)
     chrome.storage.sync.get('setting', res => {
         setting = res.setting
@@ -70,12 +69,12 @@ function parseKey(type, content) {
     if (type === 'blank') {
         return result
     } else if (type === 'mc') {
-        return result.join('').replace(/[ ]/g,"").toLowerCase()
+        return result.join('').replace(/[ ]/g, "").toLowerCase()
     } else if (type === 'cloze') {
-        return result.join('').replace(/[ ]/g,"").toLowerCase().split('-').join('')
+        return result.join('').replace(/[ ]/g, "").toLowerCase().split('-').join('')
     } else if (type === 'blankB') {
         return result.join(' ').split(' ')
-    } else if (type === 'collocation'){
+    } else if (type === 'collocation') {
         return result.map(e => e.split(' ').slice(1).join(' '))
     }
     return content
@@ -109,18 +108,18 @@ function fillBlank() {
         doCloze(content)
     } else if (type === 'blankB') {
         doBlankB(content)
-    } else if (type === 'collocation'){
+    } else if (type === 'collocation') {
         doCollocation(content)
     }
 
 }
 
-function doCollocation(keys = []){
+function doCollocation(keys = []) {
     let greens = document.getElementsByClassName('s-tz')
-    let texts = Array.prototype.map.call(greens,item => item.innerHTML)
-    keys.forEach((key,index) => {
-        for(let i = 0;texts[i];i++){
-            if(key === texts[i].slice(3)){
+    let texts = Array.prototype.map.call(greens, item => item.innerHTML)
+    keys.forEach((key, index) => {
+        for (let i = 0; texts[i]; i++) {
+            if (key === texts[i].slice(3)) {
                 greens[index].innerHTML = texts[i]
                 greens[index].id = `Item_${i}`
                 break
@@ -138,17 +137,17 @@ function doCloze(content = '') {
 }
 
 function doBlank(content = []) {
-    for (let r = 0,i = 0; content[i]; r++,i++) {
+    for (let r = 0, i = 0; content[i]; r++ , i++) {
         document.getElementById(`Blank_${r}_0`).value = content[i]
-        for(let k = 1;document.getElementById(`Blank_${r}_${k}`);k++){
+        for (let k = 1; document.getElementById(`Blank_${r}_${k}`); k++) {
             document.getElementById(`Blank_${r}_${k}`).value = content[++i]
         }
     }
     console.log('blank be filled')
 }
 
-function doBlankB(content = []){
-    for(let i = 0; content[i];i++){
+function doBlankB(content = []) {
+    for (let i = 0; content[i]; i++) {
         document.getElementById(`Blank_0_${i}`).value = content[i]
     }
 }
@@ -162,44 +161,44 @@ function doMC(content = '') {
     console.log('MC be clicked')
 }
 
-function goNext(){
-    if(!autoRun){
+function goNext() {
+    if (!autoRun) {
         return
     }
-    if(document.getElementsByClassName('next')[0]){
+    if (document.getElementsByClassName('next')[0]) {
         console.log('goNext')
         document.getElementsByClassName('next')[0].click()
     }
 }
 
-function waitforThree(what,text){
-    setTimeout(what,3000)
+function waitforThree(what, text) {
+    setTimeout(what, 3000)
     console.log(`wait for ${text}...3`)
-    setTimeout(()=>console.log(`wait for ${text}...2`),1000)
-    setTimeout(()=>console.log(`wait for ${text}...1`),2000)
+    setTimeout(() => console.log(`wait for ${text}...2`), 1000)
+    setTimeout(() => console.log(`wait for ${text}...1`), 2000)
 }
 
-function waitforSubmit(){
-    if(!autoRun){
+function waitforSubmit() {
+    if (!autoRun) {
         return
     }
     let submit = document.getElementsByClassName('submit')[0]
-    if((submit.children[0] && submit.children[0].innerText === 'Answer') || submit.innerText === 'Answer'){
-        waitforThree(goNext,'check answer')
+    if ((submit.children[0] && submit.children[0].innerText === 'Answer') || submit.innerText === 'Answer') {
+        waitforThree(goNext, 'check answer')
         return
     }
-    waitforThree(()=>{
+    waitforThree(() => {
         submit.click()
         console.log('submit')
         waitforSure()
-    },'submit')
+    }, 'submit')
 }
 
-function waitforSure(){
-    waitforThree(()=>{
+function waitforSure() {
+    waitforThree(() => {
         document.getElementsByClassName('layui-layer-btn0')[0].click()
         console.log('ensure')
-    },'sure')
+    }, 'sure')
 }
 
 function main() {

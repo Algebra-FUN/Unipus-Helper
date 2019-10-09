@@ -4,11 +4,11 @@
 ## 步骤
 ### 第一步 : 添加新的答案文件
 1. 在"keys"文件夹下，创建一个新的JS文件
-2. 命名为"key_2_{UnitID}"
+2. 命名为"key_{BookIndex}_{UnitID}"
 3. 格式化答案
 ```js
-window.key_2_{UnitID} = {
-  'key-{UnitID}-{SectionID}-{SisterID}':{
+window.key_{BookIndex}_{UnitID} = {
+  'key-{BookID}-{UnitID}-{SectionID}-{SisterID}':{
     type:'{type}',
     /* 参数可取范围
        type = {'blank','mc','cloze','blankB'}
@@ -29,20 +29,20 @@ window.key_2_{UnitID} = {
 [答案JS文件模板](../keys/key_2_1.js)
 ```js
 window.key_2_1 = {
-  'key-1-2-7': {
-    type: 'blank',
-    content: `1.condense   2.exceed     3.deficit    4.exposure    5.asset  
+  'key-138-1-2-7': {
+        type: 'blank',
+        content: `1.condense   2.exceed     3.deficit    4.exposure    5.asset  
     6.adequate   7.competent  8.adjusting  9.precisely  10.beneficial
     `
-  },
-  'key-1-2-9': {
-    type: 'blank',
-    content: 'managerial/editorial/substance/survival/tradition/margin/consistency/accuracy/efficient/recovery/ministry/assembly'
-  },
-  'key-1-2-11': {
-    type: 'cloze',
-    content: `1-5:  L C J A I          6-10:  O N E H F`
-  },
+    },
+    'key-138-1-2-9': {
+        type: 'blank',
+        content: 'managerial/editorial/substance/survival/tradition/margin/consistency/accuracy/efficient/recovery/ministry/assembly'
+    },
+    'key-138-1-2-11': {
+        type: 'cloze',
+        content: `1-5:  L C J A I          6-10:  O N E H F`
+    },
   ……………… 更多详见 "./keys/key_2_1.js"
 }
 ```
