@@ -2,7 +2,7 @@
 
 //通过DOM判断是否为Unipus
 function isTarget() {
-    if (document.getElementById('UnitID')) {
+    if (window.location.href.match(/UnitID=(?<UnitID>\d+)/).groups['UnitID']) {
         return true
     }
     return false
@@ -12,7 +12,11 @@ var locator
 var autoRun = false
 
 function getPageInfo() {
-    locator = window.location.href.match(/book(?<BookID>\d+)\/.+UnitID=(?<UnitID>\d+)&SectionID=(?<SectionID>\d+)&SisterID=(?<SisterID>\d+)/).groups
+    var regex_result = window.location.href.match(/book(?<BookID>\d+)\/.+UnitID=(?<UnitID>\d+)&SectionID=(?<SectionID>\d+)&SisterID=(?<SisterID>\d+)/)
+    if(regex_result)
+        locator = regex_result.groups
+    else if(autoRun)
+        document.querySelector('.item1 a').click()
 }
 
 var keyTab, keyData
