@@ -66,17 +66,18 @@ function BBQ(str) {
 //转化答案
 function parseKey(type, content) {
     let result = BBQ(content)
-    if (type === 'blank') {
+    if (type === 'blank') 
         return result
-    } else if (type === 'mc') {
+    else if (type === 'mc')
         return result.join('').replace(/[ ]/g, "").toLowerCase()
-    } else if (type === 'cloze') {
+    else if (type === 'cloze')
         return result.join('').replace(/[ ]/g, "").toLowerCase().split('-').join('')
-    } else if (type === 'blankB') {
+    else if (type === 'blankB')
         return result.join(' ').split(' ')
-    } else if (type === 'collocation') {
+    else if (type === 'collocation')
         return result.map(e => e.split(' ').slice(1).join(' '))
-    }
+    else if (type === 'select')
+        return result
     return content
 }
 
@@ -100,18 +101,18 @@ function fillBlank() {
     let { type, content } = keyData[keyTab]
     content = parseKey(type, content)
     console.log(content)
-    if (type === 'blank') {
+    if (type === 'blank')
         doBlank(misWord(content))
-    } else if (type === 'mc') {
+    else if (type === 'mc')
         doMC(content)
-    } else if (type === 'cloze') {
+    else if (type === 'cloze')
         doCloze(content)
-    } else if (type === 'blankB') {
+    else if (type === 'blankB')
         doBlankB(content)
-    } else if (type === 'collocation') {
+    else if (type === 'collocation')
         doCollocation(content)
-    }
-
+    else if (type === 'select')
+        doSelect(content)
 }
 
 function doCollocation(keys = []) {
@@ -134,6 +135,15 @@ function doCloze(content = '') {
         document.getElementById(`Item_0_${i}`).value = key
     }
     console.log('blank be filled')
+}
+
+function doSelect(content = []){
+    content.forEach((key,index) => 
+        Array.from(document.querySelectorAll(`[name=Blank_${index}] > option`)).forEach(opt => {
+            if(opt.value == key)
+                opt.selected = true
+        })
+    )
 }
 
 function doBlank(content = []) {
