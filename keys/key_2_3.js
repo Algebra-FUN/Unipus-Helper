@@ -66,7 +66,7 @@ window.key_2_3 = {
 
       type: 'blank',
 
-      content: `1. are tired of  2.fall into  3.be strict with  4.not amount to mach  
+      content: `1. are tired of  2.fall into  3.be strict with  4.not amount to much  
 
 5.drifted off  6.bonded with  7.resign himself to  8.surrender themselves to   
 
