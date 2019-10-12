@@ -2,9 +2,8 @@
 
 //通过DOM判断是否为Unipus
 function isTarget() {
-    if (window.location.href.match(/UnitID=(?<UnitID>\d+)/).groups['UnitID']) {
+    if (window.location.href.match(/book\d+\//)) 
         return true
-    }
     return false
 }
 
@@ -16,15 +15,14 @@ function getPageInfo() {
     if(regex_result)
         locator = regex_result.groups
     else if(autoRun)
-        document.querySelector('.item1 a').click()
+        document.querySelector('.item1 a') &&  document.querySelector('.item1 a').click()
 }
 
 var keyTab, keyData
 
 function isDataEmpty(obj) {
-    for (var i in obj) {
+    for (var i in obj)
         return false
-    }
     return true
 }
 
@@ -70,7 +68,7 @@ function BBQ(str) {
 //转化答案
 function parseKey(type, content) {
     let result = BBQ(content)
-    if (type === 'blank') 
+    if (type === 'blank' || type === 'select') 
         return result
     else if (type === 'mc')
         return result.join('').replace(/[ ]/g, "").toLowerCase()
@@ -80,8 +78,6 @@ function parseKey(type, content) {
         return result.join(' ').split(' ')
     else if (type === 'collocation')
         return result.map(e => e.split(' ').slice(1).join(' '))
-    else if (type === 'select')
-        return result
     return content
 }
 
@@ -153,32 +149,28 @@ function doSelect(content = []){
 function doBlank(content = []) {
     for (let r = 0, i = 0; content[i]; r++ , i++) {
         document.getElementById(`Blank_${r}_0`).value = content[i]
-        for (let k = 1; document.getElementById(`Blank_${r}_${k}`); k++) {
+        for (let k = 1; document.getElementById(`Blank_${r}_${k}`); k++)
             document.getElementById(`Blank_${r}_${k}`).value = content[++i]
-        }
     }
     console.log('blank be filled')
 }
 
 function doBlankB(content = []) {
-    for (let i = 0; content[i]; i++) {
+    for (let i = 0; content[i]; i++) 
         document.getElementById(`Blank_0_${i}`).value = content[i]
-    }
 }
 
 const mcf = { 'a': 0, 'b': 1, 'c': 2, 'd': 3 }
 
 function doMC(content = '') {
-    for (let i = 0; i < content.length; i++) {
+    for (let i = 0; i < content.length; i++) 
         document.getElementsByName(`Radio_${i}`)[mcf[content.charAt(i)]].click()
-    }
     console.log('MC be clicked')
 }
 
 function goNext() {
-    if (!autoRun) {
+    if (!autoRun)
         return
-    }
     if (document.getElementsByClassName('next')[0]) {
         console.log('goNext')
         document.getElementsByClassName('next')[0].click()
@@ -193,9 +185,8 @@ function waitforThree(what, text) {
 }
 
 function waitforSubmit() {
-    if (!autoRun) {
+    if (!autoRun)
         return
-    }
     let submit = document.getElementsByClassName('submit')[0]
     if ((submit.children[0] && submit.children[0].innerText === 'Answer') || submit.innerText === 'Answer') {
         waitforThree(goNext, 'check answer')
@@ -228,9 +219,8 @@ function main() {
 
 chrome.storage.sync.get('isRun', res => {
     //console.log(`isRun=${res.isRun}`)
-    if (!res.isRun) {
+    if (!res.isRun)
         return
-    }
     chrome.storage.sync.get('setting', res => {
         autoRun = res.setting.autoRun
         document.addEventListener('DOMContentLoaded', main)
