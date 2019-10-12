@@ -2,7 +2,7 @@
 
 //通过DOM判断是否为Unipus
 function isTarget() {
-    if (window.location.href.match(/book\d+\//)) 
+    if (window.location.href.match(/book\d+\//))
         return true
     return false
 }
@@ -12,10 +12,10 @@ var autoRun = false
 
 function getPageInfo() {
     var regex_result = window.location.href.match(/book(?<BookID>\d+)\/.+UnitID=(?<UnitID>\d+)&SectionID=(?<SectionID>\d+)&SisterID=(?<SisterID>\d+)/)
-    if(regex_result)
+    if (regex_result)
         locator = regex_result.groups
-    else if(autoRun)
-        document.querySelector('.item1 a') &&  document.querySelector('.item1 a').click()
+    else if (autoRun)
+        document.querySelector('.item1 a') && document.querySelector('.item1 a').click()
 }
 
 var keyTab, keyData
@@ -30,6 +30,8 @@ var setting
 
 //在Storage中搜寻答案
 function searchKey() {
+    if (!locator)
+        return
     let { BookID, UnitID, SectionID, SisterID } = locator
     keyTab = `key-${BookID}-${UnitID}-${SectionID}-${SisterID}`
     console.log(`keyTab=${keyTab}`)
@@ -68,7 +70,7 @@ function BBQ(str) {
 //转化答案
 function parseKey(type, content) {
     let result = BBQ(content)
-    if (type === 'blank' || type === 'select') 
+    if (type === 'blank' || type === 'select' || type === 'collocation')
         return result
     else if (type === 'mc')
         return result.join('').replace(/[ ]/g, "").toLowerCase()
@@ -76,8 +78,6 @@ function parseKey(type, content) {
         return result.join('').replace(/[ ]/g, "").toLowerCase().split('-').join('')
     else if (type === 'blankB')
         return result.join(' ').split(' ')
-    else if (type === 'collocation')
-        return result.map(e => e.split(' ').slice(1).join(' '))
     return content
 }
 
@@ -120,7 +120,7 @@ function doCollocation(keys = []) {
     let texts = Array.prototype.map.call(greens, item => item.innerHTML)
     keys.forEach((key, index) => {
         for (let i = 0; texts[i]; i++) {
-            if (key === texts[i].slice(3)) {
+            if (key === texts[i]) {
                 greens[index].innerHTML = texts[i]
                 greens[index].id = `Item_${i}`
                 break
@@ -137,10 +137,10 @@ function doCloze(content = '') {
     console.log('blank be filled')
 }
 
-function doSelect(content = []){
-    content.forEach((key,index) => 
+function doSelect(content = []) {
+    content.forEach((key, index) =>
         Array.from(document.querySelectorAll(`[name=Blank_${index}] > option`)).forEach(opt => {
-            if(opt.value == key)
+            if (opt.value == key)
                 opt.selected = true
         })
     )
@@ -156,14 +156,14 @@ function doBlank(content = []) {
 }
 
 function doBlankB(content = []) {
-    for (let i = 0; content[i]; i++) 
+    for (let i = 0; content[i]; i++)
         document.getElementById(`Blank_0_${i}`).value = content[i]
 }
 
 const mcf = { 'a': 0, 'b': 1, 'c': 2, 'd': 3 }
 
 function doMC(content = '') {
-    for (let i = 0; i < content.length; i++) 
+    for (let i = 0; i < content.length; i++)
         document.getElementsByName(`Radio_${i}`)[mcf[content.charAt(i)]].click()
     console.log('MC be clicked')
 }

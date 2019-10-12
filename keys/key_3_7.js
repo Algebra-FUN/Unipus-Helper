@@ -32,8 +32,8 @@ window.key_3_7 = {
         content: `1.in   2.on   3.in  4.in  5.into  6.off  7.in  8.to`
     },
     'key-139-7-7-2': {
-        type: `cloze`,
-        content: `1. e  2. 3. a  4. d  5. f   6. c`
+        type: `collocation`,
+        content: `1. e harassment  2.b spectrum 3.a futures  4.d sharply  5.f increases   6.c grief`
 	},
     'key-139-7-7-3':
         {
