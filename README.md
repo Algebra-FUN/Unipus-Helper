@@ -26,3 +26,7 @@ No matter you can code and be a developer or just help us to format key files. H
 ## To contribute 
 * **[Document of "To Contribute"](./doc/ToContribute.md)**
 * **["如何贡献"中文版](./doc/ToContribute_CN.md)**
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Algebra-FUN/Unipus-Helper.svg)](https://starchart.cc/Algebra-FUN/Unipus-Helper)
