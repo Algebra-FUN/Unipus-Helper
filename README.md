@@ -16,6 +16,8 @@ It is a Chrome Extension whose purpose is to liberate broad Chinese college stud
 * It is easy to use. Just load the unzip file under **developer mode** on your Chrome.
 * If you don't use Chrome, you can use it in the same way with a **Chromium core** browser.
 
+> If you have any problem about it, you can open an issues.
+
 ## About us
 We are a group of college students who are tired of filling the blank on Unipus in vain. We want to liberate students who suffer oppression by Unipus with use our technological capability.
 
