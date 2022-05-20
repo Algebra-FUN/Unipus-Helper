@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": [
-        "http://211.81.52.7/*"
+        "*"
       ],
       "js": [
         "./main/content-script.js"
