@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*"
+        "*://*/*"
       ],
       "js": [
         "./main/content-script.js"
