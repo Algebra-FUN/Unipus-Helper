@@ -1,0 +1,8 @@
+title: Unipus-helper
+description: It is a Chrome Extension whose purpose is to liberate broad Chinese college students who suffer oppression by Unipus. Liberate them from boring blank filling and Unipus's devils talons.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-merlot
+
+gems:
+  - jekyll-mentions
